@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiniWiki - Página Exemplo</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #202122;
+    }
+
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #a2a9b1;
+      padding: 10px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    header p {
+      margin: 2px 0 0;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      max-width: 1100px;
+      margin: 20px auto;
+      gap: 20px;
+      background: #fff;
+      border: 1px solid #a2a9b1;
+      border-radius: 4px;
+      padding: 15px;
+    }
+
+    nav {
+      border-right: 1px solid #a2a9b1;
+      padding-right: 10px;
+    }
+
+    nav h2 {
+      font-size: 1.1em;
+      border-bottom: 1px solid #a2a9b1;
+      padding-bottom: 5px;
+      margin-top: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      margin: 6px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0645ad;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 10px;
+    }
+
+    main h2 {
+      border-bottom: 1px solid #a2a9b1;
+      padding-bottom: 5px;
+    }
+
+    .infobox {
+      float: right;
+      width: 250px;
+      border: 1px solid #a2a9b1;
+      background-color: #f8f9fa;
+      padding: 8px;
+      margin: 10px;
+      font-size: 0.9em;
+    }
+
+    .infobox img {
+      width: 100%;
+      border: 1px solid #a2a9b1;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8em;
+      color: #555;
+      padding: 10px;
+      border-top: 1px solid #a2a9b1;
+      background-color: #ffffff;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      .infobox {
+        float: none;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MiniWiki</h1>
+    <p>Uma enciclopédia simples de exemplo</p>
+  </header>
+
+  <div class="container">
+    <nav>
+      <h2>Artigos</h2>
+      <ul>
+        <li><a href="#inicio">Página Inicial</a></li>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#linguagens">Linguagens</a></li>
+        <li><a href="#referencias">Referências</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article id="inicio">
+        <h2>Página Inicial</h2>
+        <div class="infobox">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Logo da Wikipédia">
+          <p><strong>WikiDio</strong> é um projeto inspirado na Wikipédia.</p>
+        </div>
+        <p>Bem-vindo ao MiniWiki, um modelo básico de site enciclopédico desenvolvido apenas com HTML e CSS. Este exemplo demonstra a estrutura de um artigo de enciclopédia tradicional.</p>
+      </article>
+
+      <article id="historia">
+        <h2>História</h2>
+        <p>O formato de enciclopédias online ganhou popularidade com o surgimento da Wikipédia em 2001. Desde então, tornou-se um modelo de referência para organização e apresentação de conteúdo colaborativo.</p>
+      </article>
+
+      <article id="linguagens">
+        <h2>Linguagens</h2>
+        <p>Este projeto utiliza apenas duas linguagens fundamentais da web:</p>
+        <ul>
+          <li><strong>HTML:</strong> define a estrutura do conteúdo.</li>
+          <li><strong>CSS:</strong> define o estilo e o layout das páginas.</li>
+        </ul>
+      </article>
+
+    </main>
+  </div>
+
+  <footer>
+    <p> Projeto de WikiaPedia HTML e CSS</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+@page {
+  size: A4 portrait;
+  margin: 15mm;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f5f6fa;
+  color: #2c3e50;
+  line-height: 1.4;
+  display: block; /* evita aumentar altura desnecessária */
+  padding: 15px;
+  font-size: 0.9em; /* reduz levemente para caber na página */
+}
+
+.container {
+  background: #fff;
+  width: 100%;
+  max-width: 850px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+header, section, .skills, .language, .job {
+  page-break-inside: avoid; /* evita cortes dentro das seções */
+  margin-bottom: 20px;
+}
+
+/* Cabeçalho */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 1.8em;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.header h2 {
+  font-size: 1em;
+  color: #555;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+}
+
+/* Contatos */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 10px;
+  font-size: 0.9em;
+}
+
+.contact a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Sessões */
+h2 {
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  font-size: 1.2em;
+  border-left: 4px solid #2980b9;
+  padding-left: 6px;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+/* Habilidades */
+.skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.skills li {
+  background: #2980b9;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  transition: 0.2s;
+}
+
+.skills li:hover {
+  background: #1f6394;
+  transform: scale(1.05);
+}
+
+/* Linguagens */
+.language {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.language li {
+  background-color: #2980b9;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  transition: 0.2s;
+}
+
+.language li:hover {
+  background: #1f6394;
+  transform: scale(1.05);
+}
+
+/* Experiência */
+.job h3 {
+  font-size: 1.05em;
+  color: #1a1a1a;
+}
+
+.periodo {
+  font-size: 0.85em;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.job h4 {
+  font-size: 0.95em;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.job p {
+  text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
