@@ -1,4 +1,4 @@
-# 📄 Currículo Online — Enzo Victoriano Leodriguez
+# 📄 Currículo Online
 
 Projeto de **currículo online profissional** desenvolvido com **HTML e CSS**, com foco em **layout limpo, responsivo e compatível com sistemas ATS (Applicant Tracking Systems)**.  
 O projeto conta também com um **script em Python** que gera automaticamente um **PDF em formato A4**, fiel ao layout exibido no navegador, utilizando a biblioteca **WeasyPrint**.
