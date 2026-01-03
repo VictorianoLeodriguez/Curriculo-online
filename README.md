@@ -25,14 +25,8 @@ A proposta é manter **uma única base de código** para o currículo, facilitan
 
 ## 📂 Estrutura do Projeto
 
-```bash
-Curriculo-online/
-├── Index.html        # Estrutura do currículo
-├── style.css         # Estilos visuais e regras de impressão
-├── gerar_pdf.py      # Script Python para gerar o PDF
-└── README.md         # Documentação do projeto
-
-🧠 Funcionalidades
+---
+## 🧠 Funcionalidades
 
 Currículo online com visual profissional
 
@@ -44,7 +38,9 @@ Geração automática de PDF em formato A4
 
 Separação clara entre conteúdo, estilo e automação
 
-🎯 Boas Práticas Aplicadas
+---
+
+##🎯 Boas Práticas Aplicadas
 
 HTML semântico
 
@@ -56,7 +52,9 @@ Evita uso excessivo de position: absolute
 
 Código limpo, simples e de fácil manutenção
 
-📌 Objetivo do Projeto
+---
+
+## 📌 Objetivo do Projeto
 
 Portfólio profissional
 
@@ -65,3 +63,12 @@ Demonstração de habilidades em Front-end
 Automação com Python
 
 Preparação de currículo para processos seletivos modernos
+
+---
+
+```bash
+Curriculo-online/
+├── Index.html        # Estrutura do currículo
+├── style.css         # Estilos visuais e regras de impressão
+├── gerar_pdf.py      # Script Python para gerar o PDF
+└── README.md         # Documentação do projeto
